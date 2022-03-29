@@ -3,6 +3,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'UserDrawer.dart';
 
 class homeScreen extends StatelessWidget {
   const homeScreen({Key? key}) : super(key: key);
@@ -31,7 +32,12 @@ class homeScreen extends StatelessWidget {
                         ),
                       )),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => UserDetails()));
+                    },
                     icon: CircleAvatar(
                       backgroundColor: Colors.grey,
                       foregroundColor: Colors.black,
@@ -306,14 +312,14 @@ class RestrauntCard extends StatelessWidget {
               ),
               Text(
                 'Continental, Italian, American',
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 18, color: Colors.grey[800]),
               ),
               SizedBox(
                 height: 10,
               ),
               Text(
                 'Jewel Chowk',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 15, color: Colors.grey[800]),
               ),
             ],
           ),
