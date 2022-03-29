@@ -198,7 +198,6 @@ class homeScreen extends StatelessWidget {
             )
           ],
         ),
-        actions: [],
       ),
       body: SingleChildScrollView(
         child: Column(
