@@ -11,6 +11,7 @@ class homeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         toolbarHeight: 180,
         backgroundColor: Colors.white,
         title: Column(
@@ -199,6 +200,126 @@ class homeScreen extends StatelessWidget {
         ),
         actions: [],
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            RestrauntCard(),
+            SizedBox(
+              height: 10,
+            ),
+            RestrauntCard(),
+            SizedBox(
+              height: 10,
+            ),
+            RestrauntCard(),
+            SizedBox(
+              height: 10,
+            ),
+            RestrauntCard(),
+            SizedBox(
+              height: 10,
+            ),
+          ],
+        ),
+      ),
     );
+  }
+}
+
+class RestrauntCard extends StatelessWidget {
+  const RestrauntCard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(children: [
+      Expanded(
+        flex: 2,
+        child: Container(
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(boxShadow: [
+            BoxShadow(
+              color: Color.fromARGB(136, 201, 201, 201),
+              blurRadius: 10,
+              offset: Offset(0, 10),
+            ),
+          ]),
+          height: 200,
+          width: 150,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Image(
+              image: AssetImage('assets/istockphoto-1316145932-170667a.jpeg'),
+              fit: BoxFit.fill,
+            ),
+          ),
+        ),
+      ),
+      Expanded(
+        flex: 3,
+        child: Container(
+          padding: EdgeInsets.all(8),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                'Dominos Pizza',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Poppins',
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.star_border_outlined,
+                    size: 15,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    '5.0',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Icon(
+                    Icons.circle,
+                    size: 10,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    '10 mins',
+                    style: TextStyle(fontSize: 16),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Continental, Italian, American',
+                style: TextStyle(fontSize: 18),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Jewel Chowk',
+                style: TextStyle(fontSize: 20),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ]);
   }
 }
