@@ -94,6 +94,44 @@ class UserDetails extends StatelessWidget {
               ),
             ),
             SettingsCard(),
+            Padding(
+              padding: const EdgeInsets.only(top: 15, bottom: 20),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: 1,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+            SettingsCard(),
+            Padding(
+              padding: const EdgeInsets.only(top: 15, bottom: 20),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: 1,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+            SettingsCard(),
+            Padding(
+              padding: const EdgeInsets.only(top: 15, bottom: 20),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: 1,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
