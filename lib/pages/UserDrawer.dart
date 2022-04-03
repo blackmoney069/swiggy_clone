@@ -56,7 +56,7 @@ class UserDetails extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 20, bottom: 25),
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 height: 2,
@@ -66,10 +66,79 @@ class UserDetails extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            SettingsCard(),
+            Padding(
+              padding: const EdgeInsets.only(top: 15, bottom: 20),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: 1,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+            SettingsCard(),
+            Padding(
+              padding: const EdgeInsets.only(top: 15, bottom: 20),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: 1,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ),
+            SettingsCard(),
           ],
         ),
       ),
+    );
+  }
+}
+
+class SettingsCard extends StatelessWidget {
+  const SettingsCard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Heading',
+              style: TextStyle(
+                fontSize: 15,
+                letterSpacing: 1.5,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),
+            ),
+            SizedBox(
+              height: 3,
+            ),
+            Text(
+              'Description of the setting and to do',
+              style: TextStyle(
+                fontSize: 12,
+              ),
+            )
+          ],
+        ),
+        IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.arrow_forward_ios,
+              size: 12,
+            )),
+      ],
     );
   }
 }
