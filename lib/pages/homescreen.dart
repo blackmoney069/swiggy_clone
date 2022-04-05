@@ -3,6 +3,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:swiggy_clone/pages/searchScreen.dart';
 import 'UserDrawer.dart';
 
 class homeScreen extends StatelessWidget {
@@ -49,7 +50,10 @@ class homeScreen extends StatelessWidget {
                 ]),
             FlatButton(
                 minWidth: MediaQuery.of(context).size.width,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SearchScreen()));
+                },
                 child: Container(
                   padding: EdgeInsets.fromLTRB(10, 10, 5, 10),
                   decoration: BoxDecoration(
