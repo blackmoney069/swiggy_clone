@@ -3,6 +3,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:swiggy_clone/pages/ChangeLocationScreen.dart';
 import 'package:swiggy_clone/pages/searchScreen.dart';
 import 'UserDrawer.dart';
 
@@ -24,7 +25,9 @@ class homeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   FlatButton.icon(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ChangeLocationScreen()));
+                      },
                       icon: Icon(Icons.location_pin),
                       label: Text(
                         'Location',
