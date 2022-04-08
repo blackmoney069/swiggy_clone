@@ -63,9 +63,13 @@ class homeScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        "Search for restaurant, item or more",
-                        style: TextStyle(color: Colors.grey[700], fontSize: 18),
+                      Expanded(
+                        child: Text(
+                          "Search for restaurants, dishes or cuisines",
+                          style: TextStyle(color: Colors.grey[700], fontSize: 18),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
                       Icon(
                         Icons.search,
