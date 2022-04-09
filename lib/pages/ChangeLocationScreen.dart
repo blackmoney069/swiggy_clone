@@ -71,8 +71,196 @@ class ChangeLocationScreen extends StatelessWidget {
               ),
             )
           ),
+          SizedBox(
+            height: 20,
+          ),
           Container(
+            decoration: BoxDecoration(
+              color: Colors.white
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Text('SAVED ADDRESSES'),
+                ),
+                FlatButton(
+                      onPressed: (){},
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(Icons.location_pin,
+                              size: 30,),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Other',
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w500,
+                                    )
+                                ),
+                                Text("Lovish Bains, 1B hostel, IIT Jammu, Ban 181221",
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                Divider(
+                                  color: Colors.black,
+                                  height: 40,
+                                )
 
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                ),
+                FlatButton(
+                  onPressed: (){},
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Icon(Icons.location_pin,
+                          size: 30,),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Other',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                )
+                            ),
+                            Text("Lovish Bains, 1B hostel, IIT Jammu, Ban 181221",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                            Divider(
+                              color: Colors.black,
+                              height: 40,
+                            )
+
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Colors.white
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Text('RECENT SEARCHES'),
+                ),
+                FlatButton(
+                  onPressed: (){},
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Icon(Icons.history,
+                          size: 30,),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Jammu',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                )
+                            ),
+                            Text("181221",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                            Divider(
+                              color: Colors.black,
+                              height: 40,
+                            )
+
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                FlatButton(
+                  onPressed: (){},
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Icon(Icons.history,
+                          size: 30,),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Jammu',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                )
+                            ),
+                            Text("181221",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                            Divider(
+                              color: Colors.black,
+                              height: 40,
+                            )
+
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+              ],
+            ),
           )
         ],
       ),
